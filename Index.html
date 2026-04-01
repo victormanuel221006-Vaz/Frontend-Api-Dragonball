@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball API</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div style="text-align: center; margin-top: 20px;">
+        <img src="assets/img/logo.png" alt="Logo Dragon Ball" style="width:750px;">
+    </div>
+    <h1  style="font-family: Arial, sans-serif; font-size: 45px; color: #000;">Personajes de Dragon Ball</h1>
+    <div class="controls">
+    <input type="text" id="busqueda" placeholder="Buscar personaje...">
+    <button onclick="buscarPersonaje()">Buscar</button>
+    <select id="filtroRaza" onchange="filtrarPorRaza()">
+        <option value="">Todas las razas</option>
+        <option value="Saiyan">Saiyan</option>
+        <option value="Namekian">Namekian</option>
+        <option value="Human">Human</option>
+        <option value="Frieza Race">Frieza Race</option>
+        <option value="Android">Android</option>
+        <option value="Majin">Majin</option>
+        <option value="God">God</option>
+        <option value="Angel">Angel</option>
+        <option value="Nucleico benigno">Nucleico benigno</option>
+        <option value="Nucleico">Nucleico</option>
+    </select>
+</div>
+
+    <div class="contenedor" id="contenedor"></div>
+
+    <script src="assets/js/app.js"></script>
+
+    <footer class="footer">
+    DragonDex by Victormlv © 2026
+    </footer>
+</body>
+</html>
